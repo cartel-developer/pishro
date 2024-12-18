@@ -1,0 +1,169 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Docs</title>
+
+    <!-- لینک به فایل CSS Bootstrap -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/font/font.css">
+
+    <!-- لینک به فایل JavaScript و Popper -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+
+
+
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="/assets/image/logo.png" alt="logo" width="40" height="40">
+            <span class="NotoSerif fs-4 ms-3">pishro</span>
+        </a>
+
+        <ul class="nav nav-pills">
+
+
+            
+            <li class="nav-item"><a href="/install/" class="nav-link">Install</a></li>
+            
+            <li class="nav-item"><a href="/Docs/" class="nav-link">Docs</a></li>
+            
+            <li class="nav-item"><a href="/Resource/" class="nav-link">Resource</a></li>
+            
+            <li class="nav-item"><a href="/donate/" class="nav-link">Donate</a></li>
+            
+
+
+
+        </ul>
+
+
+    </header>
+</div>
+<main class="container">
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Docs</h1>
+  </header>
+
+  <div class="post-content">
+    <h3 class="NotoSerif mt-5 ">Introduction</h3>
+
+<p>
+Welcome to the Educational App! Our app is designed to help you manage and organize your lessons, study sessions, and educational content efficiently. With a focus on simplicity and flexibility, our app allows you to create, customize, and track your learning materials easily. Whether you're a student, teacher, or anyone looking to enhance their learning experience, our app provides the tools you need to stay on top of your educational goals.
+</p>
+
+<h3 class="NotoSerif mt-5 ">Key Features</h3>
+
+<h4 class="NotoSerif ms-4 mt-4">Lesson Creation and Management</h4>
+<p class="ms-4">
+Easily create and manage lessons, each with customizable attributes such as title, color, unit, time, and optional links. You can schedule lessons and track your progress seamlessly.
+</p>
+
+<h4 class="NotoSerif ms-4">Task Management with Checklists</h4>
+<p class="ms-4">
+Organize your tasks and assignments with intuitive checklists. Whether it's study goals, project tasks, or general to-dos, you can keep track of everything and stay organized.
+</p>
+
+<h4 class="NotoSerif ms-4">Customizable Timers</h4>
+
+<p class="ms-4">
+Set timers for study sessions, exam preparation, and breaks. The app provides flexible options for managing your time effectively, helping you focus on the task at hand.
+</p>
+
+<h4 class="NotoSerif ms-4">YAML-based Content Creation</h4>
+<p class="ms-4">
+Skip the graphical interface and directly create and manage lessons, notes, checklists, and timers using YAML. This lightweight and human-readable format gives you full control over your data
+</p>
+
+<h3 class="NotoSerif mt-5 ">Data Management with <a href="https://yaml.org/">YAML</a></h3>
+<p class="NotoSerif">Create and share without GUI</p>
+
+<p>
+Our educational application utilizes YAML (YAML Ain't Markup Language) for storing and transferring information within the app. YAML is a human-readable data serialization format that allows for easy storage and retrieval of data structures, making it ideal for managing course details, notes, checklists, timers, and more.
+
+Users can interact with the app using YAML, bypassing the need for a graphical user interface (GUI). This enables them to create and manage lessons, notes, checklists, timers, and other educational resources directly by writing YAML configurations. This flexibility gives users full control over their content and allows for quick and efficient organization of learning materials.
+
+Through this approach, the app provides a seamless and customizable way to interact with educational data, enhancing the user experience and simplifying content management
+</p>
+
+<style>
+
+pre{
+font-family:jb;
+}
+.na{
+color:cornflowerblue;
+}
+
+.pi{
+color:black;
+}
+
+.c1{
+color:gray;
+font-family:jbi;
+}
+
+pre{
+border: 1px solid #ddd;
+  padding: 10px;
+}
+</style>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">lesson</span><span class="pi">:</span>
+  <span class="s">title:"lesson name"</span>
+  <span class="s">color:"#555555"</span>
+  <span class="s">unit:1</span>
+  <span class="s">master:[optional]</span>
+  <span class="s">link:[optional]</span>
+  <span class="s">time</span><span class="err">:</span>
+    <span class="pi">-</span> <span class="s">dow:1</span>
+      <span class="s">hour:1</span>
+      <span class="s">minute:1</span>
+
+<span class="c1"># title:String</span>
+<span class="c1"># color:String</span>
+<span class="c1"># number:Int</span>
+<span class="c1"># master:String</span>
+<span class="c1"># link:String</span>
+<span class="c1"># time:</span>
+<span class="c1">#   - dow:Int</span>
+<span class="c1">#   hour:Int</span>
+<span class="c1">#   minute:Int</span></code></pre></figure>
+
+  </div>
+
+</article>
+
+</main>
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2024</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+    </footer>
+</div>
+
+</body>
+
+
+</html>

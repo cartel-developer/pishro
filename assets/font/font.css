@@ -1,0 +1,30 @@
+@font-face {
+    font-family:NotoSerif;
+    font-style: normal;
+    src: url('NotoSerif.ttf')
+}
+
+.NotoSerif {
+    font-family:NotoSerif;
+}
+
+@font-face {
+    font-family:jb;
+    font-style: normal;
+    src: url('jb.ttf')
+}
+
+.jb {
+    font-family:jb;
+}
+
+
+@font-face {
+    font-family:jbi;
+    font-style: normal;
+    src: url('jbi.ttf')
+}
+
+.jbi {
+    font-family:jbi;
+}
